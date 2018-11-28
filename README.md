@@ -1,0 +1,1 @@
+Front-end components library by A.Dzyuba (me)
