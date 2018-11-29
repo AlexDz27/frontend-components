@@ -1,0 +1,28 @@
+.burger {
+  display: inline-block;
+  vertical-align: top;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger__bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: .4s;
+}
+
+.burger__bar--change .burger__bar--1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.burger__bar--change .burger__bar--2 {
+  opacity: 0;
+}
+
+.burger__bar--change .burger__bar--3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
