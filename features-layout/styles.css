@@ -1,0 +1,22 @@
+.container {
+  width: 768px;
+  margin: 0 auto;
+  background-color: #ccc;
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.item {
+  background-color: limegreen;
+  width: 150px;
+  height: 150px;
+
+  margin-right: 75px;
+
+}
+
+.item:nth-child(3n) {
+  margin-right: 0;
+}
