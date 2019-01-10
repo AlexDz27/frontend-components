@@ -1,14 +1,14 @@
 var myDiv = document.querySelector('.my-div');
 var container = document.querySelector('.test-section');
 
-// myDiv has pos: relative, so if it goes below 0, then it is out of the container
-var maxLeft = 0;
-var maxRight = container.offsetWidth - myDiv.offsetWidth;
-// myDiv has pos: relative, so if it goes above 0, then it is out of the container
-var maxTop = 0;
-var maxBottom = container.offsetHeight - myDiv.offsetHeight;
-
 myDiv.addEventListener('mousedown', function (evt) {
+  // myDiv has pos: relative, so if it goes below 0, then it is out of the container
+  var maxLeft = 0;
+  var maxRight = container.offsetWidth - myDiv.offsetWidth;
+  // myDiv has pos: relative, so if it goes above 0, then it is out of the container
+  var maxTop = 0;
+  var maxBottom = container.offsetHeight - myDiv.offsetHeight;
+
   var dragStartCoords = {
     x: evt.clientX,
     y: evt.clientY,

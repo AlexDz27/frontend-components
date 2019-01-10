@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Times New Roman", sans-serif;
+  min-height: 6000px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.registrar {
+  position: fixed;
+}
+
+.my-div {
+  min-height: 555px;
+  background-color: limegreen;
+}
+
+.my-div-2 {
+  min-height: 555px;
+  background-color: yellowgreen;
+}
