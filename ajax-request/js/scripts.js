@@ -1,4 +1,5 @@
-var url = 'http://test.au/ajax.php?qwe=asd';
+var url = 'http://test.au/ajax.php';
+// var url = 'https://jsonplaceholder.typicode.com/todos/1';
 
 var form = document.querySelector('form');
 
@@ -8,18 +9,15 @@ form.addEventListener('submit', function (evt) {
   var formData = new FormData(this);
   console.log(formData);
 
-  window.ajax.request(
-    url,
-    // 'POST',
-    'GET',
-    function () {
+  window.ajax.request({
+    url: url,
+    method: 'GET',
+    onLoad: function () {
       console.log(this.response);
     },
-    function () {
-      console.error('Error');
+    onError: function () {
+      console.error('Error requesting data from server. Try again later');
     },
-    formData
-  );
+    requestData: {foo: 'bar', baz: 'qwe'}
+  });
 });
-
-console.log(window.some);
