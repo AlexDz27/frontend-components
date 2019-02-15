@@ -1,8 +1,11 @@
 ;(function () {
 
   function Ajax() {
-    // this.request = function (url, method, onLoad, onError, requestData) {
     this.request = function (params) {
+      if (params.requestData === undefined) {
+        params.requestData = null;
+      }
+
       var request = new XMLHttpRequest();
 
       request.addEventListener('load', params.onLoad);
@@ -12,20 +15,24 @@
     };
 
     function sendRequest(request, method, url, requestData) {
-      url = buildUrlIfGet(url, requestData);
-      console.log(url);
-      
+      if (method === 'GET') {
+        url = buildUrl(url, requestData);
+      }
+
       request.open(method, url);
       handleMethod(request, method, requestData);
 
       request.send(requestData);
     }
 
-    function buildUrlIfGet(url, requestData) {
+    function buildUrl(url, requestData) {
+      if (requestData === null) {
+        return url;
+      }
       if (url.indexOf('?') > -1) {
         return url;
       }
-      
+
       var requestDataString = convertRequestDataToString(requestData);
       url = url + requestDataString;
 
