@@ -19,5 +19,6 @@ form.addEventListener('submit', function (evt) {
       console.error('Error requesting data from server. Try again later');
     },
     requestData: {foo: 'bar', baz: 'qwe'}
+    // requestData: null -> for GET requests (i.e. for requests with no data needed)
   });
 });
