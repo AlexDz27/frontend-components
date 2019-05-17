@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/styles.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+<main class="main">
+  <section class="container test-container">
+
+    <form method="post">
+      <label class="checkbox test-container__checkbox">
+        <span class="checkbox__text">Checkbox 1</span>
+        <input class="checkbox__input" type="checkbox" name="check">
+        <span class="checkbox__box"></span>
+      </label>
+
+      <label class="checkbox test-container__checkbox">
+        <span class="checkbox__text">Checkbox 2</span>
+        <input class="checkbox__input" type="checkbox" name="check" checked>
+        <span class="checkbox__box"></span>
+      </label>
+
+      <label class="checkbox checkbox--disabled test-container__checkbox">
+        <span class="checkbox__text">Checkbox 3 disabled</span>
+        <input class="checkbox__input" type="checkbox" name="check" disabled>
+        <span class="checkbox__box"></span>
+      </label>
+
+      <label class="checkbox checkbox--disabled test-container__checkbox">
+        <span class="checkbox__text">Checkbox 4 disabled</span>
+        <input class="checkbox__input" type="checkbox" name="check" checked disabled>
+        <span class="checkbox__box"></span>
+      </label>
+
+      <br><br>
+
+      <label class="radio test-container__radio">
+        <span class="radio__text">Radio 1</span>
+        <input class="radio__input" type="radio" name="radio" value="radio-1">
+        <span class="radio__circle"></span>
+      </label>
+
+      <label class="radio test-container__radio">
+        <span class="radio__text">Radio 2</span>
+        <input class="radio__input" type="radio" name="radio" value="radio-2" checked>
+        <span class="radio__circle"></span>
+      </label>
+
+      <label class="radio radio--disabled test-container__radio">
+        <span class="radio__text">Radio 3 disabled</span>
+        <input class="radio__input" type="radio" name="radio" value="radio-3" disabled>
+        <span class="radio__circle"></span>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </section>
+</main>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
