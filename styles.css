@@ -7,6 +7,10 @@ body {
   line-height: 27px;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -18,3 +22,13 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.welcome-section h1 {
+  font-size: 2em;
+}
